@@ -23,4 +23,3 @@ def driver():
         'app': 'ajax.apk' # You need to download ajax.apk to the root directory
     }
     return webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
-
