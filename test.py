@@ -23,6 +23,7 @@ class TestAjax:
 
     @pytest.mark.parametrize('email_, password_', [users.get('correct_user'), users.get('incorrect_user')])
     def test_login(self, driver, email_, password_):
+        # login button
         self.check(driver, 'com.ajaxsystems:id/login').click()
         # email input
         self.check(driver, 'com.ajaxsystems:id/login').send_keys(email_)
